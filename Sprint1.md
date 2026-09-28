@@ -72,8 +72,22 @@ Ejemplo de clase: VistaLogin, VistaSwipe, VistaMatches (paneles Swing generados 
 
 Actúa de intermediario: escucha los eventos de la vista (clics, gestos) y decide qué hacer, apoyándose en el modelo.
 
+# 7. Librerías de componentes nativas y multiplataforma	Comparar y documentar las librerías gráficas a usar (Swing, JavaFX u otras) y sus características
+Las librerías que vamos a utilizar para realizar nuestra aplicación son:
+
+*Swing:* Es un grupo de librerías que nos facilita el desarrollo de interfaces gráficas de usuario en Java. Esta librería se encuentra en el paquete JDK y se considera una versión avanzada de la biblioteca AWT
+La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios componentes como botones, campos de texto, paneles…[3]
+
+*AWT:* La librería AWT (Abstract Window Toolkit) es una colección de recursos dentro de la biblioteca de Java. La librería AWT ayuda a los programadores a crear interfaces gráficas de usuario (GUI). Este conjunto ofrece una base de componentes como botones, ventanas y menús que se relacionan directamente con el sistema operativo en uso[4]
+
+
 ## Referencias 
 
 [1] J. Ferrer, «Swipe left, swipe right — but why?», Medium. Accedido: 26 de septiembre de 2026. [En línea]. Disponible en: https://uxdesign.cc/swipe-left-swipe-right-but-why-tinder-ux-ui-simple-dating-mobile-app-swiping-design-4d2295d80407
 
 [2] Paw, «Tinder Review 2026: Is It Still the Top Dating App?» Accedido: 26 de septiembre de 2026. [En línea]. Disponible en: https://www.swipestats.io/blog/tinder-review
+
+[3] “Swing en Java”. Bahiaxip.com. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://bahiaxip.com/entrada/swing-en-java
+
+[4]“¿Qué es AWT (Abstract Window Toolkit)? - Top Up Grado en un año MSMK”. Top Up Grado en un año MSMK. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://msmk.university/que-es-awt-abstract-window-toolkit/
+
