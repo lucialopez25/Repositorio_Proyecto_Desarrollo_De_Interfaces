@@ -88,6 +88,12 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 | **Multiplataforma** | Limitada | Total |
 | **Relación y estado** | Base original (en desuso) | Evolución de AWT (en mantenimiento) |
 
+# 8. Componentes: características y campo de aplicación	Listar los componentes gráficos que usará la app y para qué sirve cada uno	
+
+JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[5]
+
+Desktop Pane → Es una clase que nos permite crear múltiples documentos (MDI), estas aplicaciones pueden contener varias ventanas internas dentro de una principal[6]
+
 
 ## Referencias 
 
@@ -98,4 +104,9 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 [3] “Swing en Java”. Bahiaxip.com. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://bahiaxip.com/entrada/swing-en-java
 
 [4]“¿Qué es AWT (Abstract Window Toolkit)? - Top Up Grado en un año MSMK”. Top Up Grado en un año MSMK. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://msmk.university/que-es-awt-abstract-window-toolkit/
+
+[5]“▷ JFrame en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jframe/ 
+
+[6]“▷ JDesktopPane en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jdesktoppane/ 
+
 
