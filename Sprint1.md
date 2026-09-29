@@ -80,6 +80,14 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 
 *AWT:* La librería AWT (Abstract Window Toolkit) es una colección de recursos dentro de la biblioteca de Java. La librería AWT ayuda a los programadores a crear interfaces gráficas de usuario (GUI). Este conjunto ofrece una base de componentes como botones, ventanas y menús que se relacionan directamente con el sistema operativo en uso[4]
 
+| Criterio | AWT | Swing |
+|----------|-----|-------|
+| **Componentes** | Nativos (pesados) | Propios de Java (ligeros) |
+| **Dependencia del SO** | Alta | Baja |
+| **Apariencia** | La del sistema operativo | Configurable (Look & Feel) |
+| **Multiplataforma** | Limitada | Total |
+| **Relación y estado** | Base original (en desuso) | Evolución de AWT (en mantenimiento) |
+
 
 ## Referencias 
 
