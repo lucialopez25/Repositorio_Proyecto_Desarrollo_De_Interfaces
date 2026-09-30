@@ -90,9 +90,13 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 
 # 8. Componentes: características y campo de aplicación	Listar los componentes gráficos que usará la app y para qué sirve cada uno	
 
-JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[5]
+JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[5] y vamos a utilizarlo como interfaz principal de la aplicación
 
-Desktop Pane → Es una clase que nos permite crear múltiples documentos (MDI), estas aplicaciones pueden contener varias ventanas internas dentro de una principal[6]
+JPanel → Es un contenedor que se utiliza para agrupar otros componentes[6] y vamos a utilizarlo para agrupar la carta del juego
+
+JLabel → Es un objeto cuya función es mostrar un texto[7] y lo vamos a utilizar para mostrar el titulo y los datos del videojuego
+
+JButton → Es un interruptor que al presionarse se ejecuta una acción en la aplicación[8] y nosotros lo vamos a utilizar en botones de Like y Dislike
 
 
 ## Referencias 
@@ -107,6 +111,9 @@ Desktop Pane → Es una clase que nos permite crear múltiples documentos (MDI),
 
 [5]“▷ JFrame en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jframe/ 
 
-[6]“▷ JDesktopPane en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jdesktoppane/ 
+[6]“JPanel”. Java a tu alcance. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://javaparajavatos.wordpress.com/2016/10/18/jpanel/
 
+[7]“jlabel en java”. PROGRAMACION. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://victomanolo.wordpress.com/jlabel-en-java/
+
+[8]L. Gómez Salgado. “Javax.swing.JButton: Cómo crear botones interactivos”. KeepCoding Bootcamps. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://keepcoding.io/blog/que-es-javax-swing-jbutton-y-como-usarlo/
 
