@@ -140,7 +140,7 @@ La clave de diseño: una sola decisión binaria por tarjeta (izquierda/derecha),
 
 ### 8. Sprint Backlog
 
-### Sprint 1 (1 semana) — Objetivo: Ideación y Prototipado Base
+#### Sprint 1 (1 semana) — Objetivo: Ideación y Prototipado Base
 
 Sprint Goal: Tener completa la documentación inicial del proyecto (descripción funcional y alcance técnico), lista como base antes de empezar a desarrollar la interfaz en el siguiente sprint.
 
@@ -166,12 +166,12 @@ Tarea	Descripción	Estimación	Responsable
 
 10	Descripción de las clases, propiedades y métodos	Documentar las clases del proyecto (Modelo, Vista, Controlador) con sus propiedades y métodos
 
-## Patron de arquitectura de la aplicación gráfico
+#### Patron de arquitectura de la aplicación gráfico
 
 Modelo Vista Controlador(MVC)
 Para la aplicación se adopta el patrón MVC, que separa la aplicación en tres capas con funciones distintas.
 
-### 1. Modelo (Model)
+#### 1. Modelo (Model)
 
 Contiene la lógica de negocio y el acceso a los datos. No sabe nada sobre cómo se muestra la información en pantalla.
 
@@ -183,7 +183,7 @@ Gestionar el acceso a la base de datos (usuarios, títulos, swipes, matches).
 
 Ejemplo de clase: SwipeModel, MatchModel, LoginModel (ya usado como ejemplo en la conversación).
 
-### 2. Vista (View)
+#### 2. Vista (View)
 
 Se encarga exclusivamente de la presentación visual: los componentes gráficos y cómo se muestran al usuario.
 
@@ -195,11 +195,11 @@ No contiene lógica de negocio ni decide qué hacer con los datos, solo los pres
 
 Ejemplo de clase: VistaLogin, VistaSwipe, VistaMatches (paneles Swing generados con NetBeans, como VistaLogin visto anteriormente).
 
-### 3. Controlador (Controller)
+#### 3. Controlador (Controller)
 
 Actúa de intermediario: escucha los eventos de la vista (clics, gestos) y decide qué hacer, apoyándose en el modelo.
 
-# 7. Librerías de componentes nativas y multiplataforma	Comparar y documentar las librerías gráficas a usar (Swing, JavaFX u otras) y sus características
+#### 7. Librerías de componentes nativas y multiplataforma	Comparar y documentar las librerías gráficas a usar (Swing, JavaFX u otras) y sus características
 Las librerías que vamos a utilizar para realizar nuestra aplicación son:
 
 *Swing:* Es un grupo de librerías que nos facilita el desarrollo de interfaces gráficas de usuario en Java. Esta librería se encuentra en el paquete JDK y se considera una versión avanzada de la biblioteca AWT
@@ -215,7 +215,7 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 | **Multiplataforma** | Limitada | Total |
 | **Relación y estado** | Base original (en desuso) | Evolución de AWT (en mantenimiento) |
 
-# 8. Componentes: características y campo de aplicación	Listar los componentes gráficos que usará la app y para qué sirve cada uno	
+#### 8. Componentes: características y campo de aplicación	Listar los componentes gráficos que usará la app y para qué sirve cada uno	
 
 JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[6] y vamos a utilizarlo como interfaz principal de la aplicación
 
@@ -224,6 +224,63 @@ JPanel → Es un contenedor que se utiliza para agrupar otros componentes[7] y v
 JLabel → Es un objeto cuya función es mostrar un texto[8] y lo vamos a utilizar para mostrar el titulo y los datos del videojuego
 
 JButton → Es un interruptor que al presionarse se ejecuta una acción en la aplicación[8] y nosotros lo vamos a utilizar en botones de Like y Dislike
+
+### 9. Asociación de acciones a eventos y edición del código generado
+#### 9.1 Asociaciones de acciones de eventos:
+• mousePressed (MouseListener): guarda las coordenadas horizontales de inicio donde el usuario toca la pantalla.
+• mouseReleased (MouseListener): anota las coordenadas x e y al final. Entonces el controlador calcula la diferencia pudiendo saber si se ha dirigido hacia la derecha o hacia la izquierda.
+• mouseDragged (MouseMotionListener): modifica continuamente la propiedad setLocation() del JPanel de la tarjeta, permitiendo asi que un arrastre visual conforme lo mueves hacia un lado.
+
+#### 9.2 Edición del código generado:
+Sería necesario modificar el código automatico del diseño del IDE para poner el Layout en "null", si no las tarjetas no se moverian.
+Tambien dentro de los eventos añadir una logica matematica del arrastre.
+
+### 10. Descripción de las clases, propiedades, métodos
+#### Paquete vista:
+##### Clases:
+
+• VistaLogin:  
+Propiedades: lblLogo, lblBienvenido, txtUsuario, txtContrasena, btnVer, btnOlvidaste, btnEntrar, btnInvitado, btnCrearCuenta  
+Métodos: public String getUsuarioText(), public String getPasswordText(), public JButton getBtnEntrar(), public JButton getBtnInvitado(), public JButton getBtnCrearCuenta()  
+
+• VistaSala:  
+Propiedades: txtBuscador, btnTodo, btnPeliculas, btnVideojuegos, panelTarjeta, lblPoster, lblTitulo, lblDetalles, lblPuntuacion, btnNo, btnFavorito, btnMeInteresa, btnNavDescubrir, btnNavElecciones, btnNavPerfil  
+Métodos: public JPanel getPanelTarjeta(), public JLabel getLblTitulo(), public JButton getBtnNo(), public JButton getBtnMeInteresa(), public JButton getBtnNavPerfil(), public JButton getBtnPeliculas()  
+
+• VistaPerfil:  
+Propiedades: lblFoto, lblNombreUsuario, txtNombre, txtCorreo, btnAccion, btnAventura, btnTerror, btnSciFi, btnComedia, btnRpg, btnDrama, btnSwitchNotificaciones, btnSwitchPeliculas, btnSwitchVideojuegos, btnCerrarSesion, btnNavDescubrir, btnNavElecciones, btnNavPerfil  
+Métodos: public JButton getBtnCerrarSesion(), public String getTxtNombreText(), public JButton getBtnNavDescubrir()  
+
+
+#### Paquete control:
+##### Clases:
+
+• LoginControl:  
+Propiedades: vistaLogin, modeloLogin  
+Métodos: public void actionPerformed(ActionEvent e)  
+
+• TarjetaControlador:  
+Propiedades: xInicial, UMBRAL_DESLIZAMIENTO, vistaSala, salaModelo  
+Métodos: public void mousePressed(MouseEvent e), public void mouseDragged(MouseEvent e), public void mouseReleased(MouseEvent e)  
+
+• PerfilControlador:  
+Propiedades: vistaPerfil, userMode  
+Métodos: public void actionPerformed(ActionEvent e)  
+
+
+#### Paquete modelo:
+##### Clases:
+
+• UserMode:
+Propiedades: idUsuario, username, email, nombreReal
+Métodos: public String getUsername(), public void setUsername(String name)
+
+• LoginModel:
+Métodos: public boolean autenticarUsuario(String user, String pass)
+
+• SalaModelo:
+• Propiedades: listaElementos, indiceActual, historialVotos
+• Métodos: public ElementoItem obtenerSiguienteElemento(), public void guardarEleccion(int id, boolean voto)
 
 
 ### Referencias 
