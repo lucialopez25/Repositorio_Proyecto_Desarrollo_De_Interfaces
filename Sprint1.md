@@ -129,6 +129,12 @@ La clave de diseño: una sola decisión binaria por tarjeta (izquierda/derecha),
 ### El "match" como refuerzo emocional
 [2]El patrón de gamificación es: acción rápida (swipe) → recompensa variable e impredecible (match o no match) → refuerzo visual/sonoro inmediato. Es el mismo circuito de las tragaperras, y funciona igual de bien para "match" en gustos de cine o videojuegos.
 
+### Gestión de perfiles
+
+[3]Netflix permite que cada persona de un hogar tenga su propia experiencia personalizada, con hasta 5 perfiles en una misma cuenta. Cada perfil tiene sus propios ajustes, categorías y valoraciones, y se puede cambiar su nombre, su imagen y su idioma desde la pantalla "Gestionar perfiles".
+
+[4]El valor del perfil no es solo organizativo. Los responsables del sistema de recomendación de Netflix explican en un artículo académico que este influye en alrededor del 80 % de las horas que se reproducen en la plataforma.
+
 ## Product Backlog
 
  <img width="2720" height="1920" alt="Image" src="https://github.com/user-attachments/assets/6cac56d7-2d76-4b97-ad89-603d8923937d" />
@@ -198,9 +204,9 @@ Actúa de intermediario: escucha los eventos de la vista (clics, gestos) y decid
 Las librerías que vamos a utilizar para realizar nuestra aplicación son:
 
 *Swing:* Es un grupo de librerías que nos facilita el desarrollo de interfaces gráficas de usuario en Java. Esta librería se encuentra en el paquete JDK y se considera una versión avanzada de la biblioteca AWT
-La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios componentes como botones, campos de texto, paneles…[3]
+La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios componentes como botones, campos de texto, paneles…[4]
 
-*AWT:* La librería AWT (Abstract Window Toolkit) es una colección de recursos dentro de la biblioteca de Java. La librería AWT ayuda a los programadores a crear interfaces gráficas de usuario (GUI). Este conjunto ofrece una base de componentes como botones, ventanas y menús que se relacionan directamente con el sistema operativo en uso[4]
+*AWT:* La librería AWT (Abstract Window Toolkit) es una colección de recursos dentro de la biblioteca de Java. La librería AWT ayuda a los programadores a crear interfaces gráficas de usuario (GUI). Este conjunto ofrece una base de componentes como botones, ventanas y menús que se relacionan directamente con el sistema operativo en uso[5]
 
 | Criterio | AWT | Swing |
 |----------|-----|-------|
@@ -212,11 +218,11 @@ La biblioteca hace posible integrar y ajustar un proyecto Java mediante varios c
 
 # 8. Componentes: características y campo de aplicación	Listar los componentes gráficos que usará la app y para qué sirve cada uno	
 
-JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[5] y vamos a utilizarlo como interfaz principal de la aplicación
+JFrame → Es uno de los componentes fundamentales a la hora de crear interfaces gráficas (GUI), utilizada como una ventana donde se van añadiendo componentes como etiquetas,botones,texto… para crear una interfaz de usuario[6] y vamos a utilizarlo como interfaz principal de la aplicación
 
-JPanel → Es un contenedor que se utiliza para agrupar otros componentes[6] y vamos a utilizarlo para agrupar la carta del juego
+JPanel → Es un contenedor que se utiliza para agrupar otros componentes[7] y vamos a utilizarlo para agrupar la carta del juego
 
-JLabel → Es un objeto cuya función es mostrar un texto[7] y lo vamos a utilizar para mostrar el titulo y los datos del videojuego
+JLabel → Es un objeto cuya función es mostrar un texto[8] y lo vamos a utilizar para mostrar el titulo y los datos del videojuego
 
 JButton → Es un interruptor que al presionarse se ejecuta una acción en la aplicación[8] y nosotros lo vamos a utilizar en botones de Like y Dislike
 
@@ -227,15 +233,19 @@ JButton → Es un interruptor que al presionarse se ejecuta una acción en la ap
 
 [2] Paw, «Tinder Review 2026: Is It Still the Top Dating App?» Accedido: 26 de septiembre de 2026. [En línea]. Disponible en: https://www.swipestats.io/blog/tinder-review
 
-[3] “Swing en Java”. Bahiaxip.com. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://bahiaxip.com/entrada/swing-en-java
+[3]Netflix Help Center, «How to create, change, or delete profiles», *Netflix Help*, 2026. \[En línea\]. Disponible en: https://help.netflix.com/en/node/10421 \[Accedido: 01-oct-2026\].
 
-[4]“¿Qué es AWT (Abstract Window Toolkit)? - Top Up Grado en un año MSMK”. Top Up Grado en un año MSMK. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://msmk.university/que-es-awt-abstract-window-toolkit/
+[4]C. A. Gomez-Uribe y N. Hunt, «The Netflix Recommender System: Algorithms, Business Value, and Innovation», *ACM Transactions on Management Information Systems*, vol. 6, n.º 4, art. 13, pp. 1-19, 2015. DOI: https://doi.org/10.1145/2843948.
 
-[5]“▷ JFrame en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jframe/ 
+[5] “Swing en Java”. Bahiaxip.com. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://bahiaxip.com/entrada/swing-en-java
 
-[6]“JPanel”. Java a tu alcance. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://javaparajavatos.wordpress.com/2016/10/18/jpanel/
+[6]“¿Qué es AWT (Abstract Window Toolkit)? - Top Up Grado en un año MSMK”. Top Up Grado en un año MSMK. Accedido el 28 de septiembre de 2026. [En línea]. Disponible: https://msmk.university/que-es-awt-abstract-window-toolkit/
 
-[7]“jlabel en java”. PROGRAMACION. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://victomanolo.wordpress.com/jlabel-en-java/
+[7]“▷ JFrame en Java → 【 Tutorial de JAVA 】”. Oregoom.com. Accedido el 29 de septiembre de 2026. [En línea]. Disponible: https://oregoom.com/java/jframe/ 
 
-[8]L. Gómez Salgado. “Javax.swing.JButton: Cómo crear botones interactivos”. KeepCoding Bootcamps. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://keepcoding.io/blog/que-es-javax-swing-jbutton-y-como-usarlo/
+[8]“JPanel”. Java a tu alcance. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://javaparajavatos.wordpress.com/2016/10/18/jpanel/
+
+[9]“jlabel en java”. PROGRAMACION. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://victomanolo.wordpress.com/jlabel-en-java/
+
+[10]L. Gómez Salgado. “Javax.swing.JButton: Cómo crear botones interactivos”. KeepCoding Bootcamps. Accedido el 30 de septiembre de 2026. [En línea]. Disponible: https://keepcoding.io/blog/que-es-javax-swing-jbutton-y-como-usarlo/
 
