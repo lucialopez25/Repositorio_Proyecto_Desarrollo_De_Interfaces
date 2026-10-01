@@ -122,14 +122,14 @@ Hemos establecido que las tarjetas de contenido muestren solo los datos indispen
 
 ## Benchmarking
 
-### Mecánica central: el gesto de swipe
+**Mecánica central: el gesto de swipe**
 [1][2]El gesto nació de una idea muy simple: su cofundador Jonathan Badeen se inspiró limpiando un espejo empañado, buscando fluidez al pasar de una tarjeta a otra.
 La clave de diseño: una sola decisión binaria por tarjeta (izquierda/derecha), sin formularios ni fricción cognitiva.
 
-### El "match" como refuerzo emocional
+**El "match" como refuerzo emocional**
 [2]El patrón de gamificación es: acción rápida (swipe) → recompensa variable e impredecible (match o no match) → refuerzo visual/sonoro inmediato. Es el mismo circuito de las tragaperras, y funciona igual de bien para "match" en gustos de cine o videojuegos.
 
-### Gestión de perfiles
+**Gestión de perfiles**
 
 [3]Netflix permite que cada persona de un hogar tenga su propia experiencia personalizada, con hasta 5 perfiles en una misma cuenta. Cada perfil tiene sus propios ajustes, categorías y valoraciones, y se puede cambiar su nombre, su imagen y su idioma desde la pantalla "Gestionar perfiles".
 
