@@ -1,6 +1,7 @@
+## SwipeCo DI
 SwipeCo es una aplicación móvil que ayuda a grupos de amigos a ponerse de acuerdo sobre qué ver o jugar. Cada ususario desliza (swipe) a derecha o izquierda sobre tarjetas de películas y videojuegos, y la app muestra las coincidencias con el grupo.
 El grupo está formado por Lucía,Segio,Raul y Felipe.
-# Diario de campo
+### Diario de campo
 * **28/09/2026**
 Hemos creado este nuevo proyecto debido al requerimiento del profesor para separar las asignaturas de Proyecto Intermodular y Desarrollo de interfaces. Lucía ha vuelto a crear las plantillas y hemos pasado el contenido existente al repositorio (La parte de Felipe del Sprint 1 que ya había realizado durante el fin de semana). Por la tarde tuvimos una reunión de grupo para leer el contenido de la actividad y llegar a un acuerdo con el reparto de tareas.
 
