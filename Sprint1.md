@@ -96,7 +96,7 @@ La gran ventaja frente a la competencia: Incluir videojuegos para jugar juntos a
 El usuario clave para dar a conocer la app: Identificamos que los primeros en empezar a usar y recomendar nuestra aplicación serán los organizadores de las quedadas y los administradores de grupos (representados por nuestro perfil de Alex). Ellos serán los encargados de invitar al resto de amigos a la sala para decidir en un momento.
 
 
-## OBJETIVOS PRINCIPALES DE LA INTERFAZ DE LA APLICACIÓN
+### 5. OBJETIVOS PRINCIPALES DE LA INTERFAZ DE LA APLICACIÓN
 
 Para el diseño de la interfaz de nuestra aplicación, nos hemos marcado una serie de objetivos fundamentales centrados en resolver los problemas de tiempo y frustración que identificamos en nuestro estudio del público objetivo. A continuación, detallamos los objetivos principales que guiarán toda la experiencia visual y de uso de la herramienta:
 
@@ -120,7 +120,7 @@ Nos hemos fijado como objetivo que los participantes tengan un control claro de 
 
 Hemos establecido que las tarjetas de contenido muestren solo los datos indispensables para tomar una decisión rápida sin saturar la pantalla con texto. Cada tarjeta presentará la imagen principal, el título, la puntuación media, la duración o género, las plataformas donde se encuentra disponible y, en el caso de los videojuegos, si dispone de modo cooperativo local o multijugador.
 
-## Benchmarking
+### 6. Benchmarking
 
 **Mecánica central: el gesto de swipe**
 [1][2]El gesto nació de una idea muy simple: su cofundador Jonathan Badeen se inspiró limpiando un espejo empañado, buscando fluidez al pasar de una tarjeta a otra.
@@ -134,11 +134,11 @@ La clave de diseño: una sola decisión binaria por tarjeta (izquierda/derecha),
 
 [4]El valor del perfil no es solo organizativo. Los responsables del sistema de recomendación de Netflix explican en un artículo académico que este influye en alrededor del 80 % de las horas que se reproducen en la plataforma.
 
-## Product Backlog
+### 7. Product Backlog
 
  <img width="2720" height="1920" alt="Image" src="https://github.com/user-attachments/assets/6cac56d7-2d76-4b97-ad89-603d8923937d" />
 
-## Sprint Backlog
+### 8. Sprint Backlog
 
 ### Sprint 1 (1 semana) — Objetivo: Ideación y Prototipado Base
 
@@ -226,7 +226,7 @@ JLabel → Es un objeto cuya función es mostrar un texto[8] y lo vamos a utiliz
 JButton → Es un interruptor que al presionarse se ejecuta una acción en la aplicación[8] y nosotros lo vamos a utilizar en botones de Like y Dislike
 
 
-## Referencias 
+### Referencias 
 
 [1] J. Ferrer, «Swipe left, swipe right — but why?», Medium. Accedido: 26 de septiembre de 2026. [En línea]. Disponible en: https://uxdesign.cc/swipe-left-swipe-right-but-why-tinder-ux-ui-simple-dating-mobile-app-swiping-design-4d2295d80407
 
