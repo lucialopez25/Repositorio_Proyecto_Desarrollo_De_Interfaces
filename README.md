@@ -1,5 +1,5 @@
-## SwipeCo DI
-SwipeCo es una aplicación móvil que ayuda a grupos de amigos a ponerse de acuerdo sobre qué ver o jugar. Cada ususario desliza (swipe) a derecha o izquierda sobre tarjetas de películas y videojuegos, y la app muestra las coincidencias con el grupo.
+## CoSwipe
+CoSwipe es una aplicación móvil que ayuda a grupos de amigos a ponerse de acuerdo sobre qué ver o jugar. Cada ususario desliza (swipe) a derecha o izquierda sobre tarjetas de películas y videojuegos, y la app muestra las coincidencias con el grupo.
 El grupo está formado por Lucía,Segio,Raul y Felipe.
 ### Diario de campo
 * **28/09/2026**
