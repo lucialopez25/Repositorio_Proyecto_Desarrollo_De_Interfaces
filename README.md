@@ -37,7 +37,7 @@ El desarrollo del proyecto abarca los siguientes bloques documentales y técnico
 
 | Entregable | Enlace / Ubicación |
 | :--- | :--- |
-|**Prototipo de la Interfaz de la Aplicacion(Escritorio)**| https://www.figma.com/make/VALrpNbeki9XjeHDB1R5VV/CoSwipe-app-development?t=XEdlfvO3hOW9Bm1V-1
+|**Prototipo de la Interfaz de la Aplicacion(Escritorio)**| https://www.figma.com/make/QvWq8hQ88w22pWEtOctj04/CoSwipe-Web-App-Design?t=nzYJMCZ9b8HserCt-1
 | **Prototipo de la Interfaz de la Aplicación(Movil)** | https://www.figma.com/make/vzu00p9ClIvzZ4zfpfeS6z/CoSwipe-Mobile-UI-Prototype?fullscreen=1&t=zROYFILGHcoK0lLm-1&code-node-id=0-6 |
 | **Presentación del Sprint Review** | https://canva.link/pqf64w7djfit2zq |
 
