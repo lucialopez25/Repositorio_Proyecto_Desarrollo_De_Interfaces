@@ -13,4 +13,5 @@ Para garantizar que la interfaz sea usable y accesible (Norma WCAG AA)[2], estab
 
 ## Referencias
 [1]“La regla 60-30-10 en diseño UX | Torresburriel Estudio”. Blog - UX Torresburriel Estudio. Accedido el 20 de octubre de 2026. [En línea]. Disponible: https://torresburriel.com/weblog/la-regla-60-30-10-en-diseno-ux/
+
 [2]“Web Inclusion GmbH”. Eye-Able. Accedido el 21 de octubre de 2026. [En línea]. Disponible: https://eye-able.com/es/blog/wcag-a-aa-aaa
