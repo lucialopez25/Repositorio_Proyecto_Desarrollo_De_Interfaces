@@ -1,15 +1,36 @@
 # 2.5 Pautas de aspecto
 
-Para el diseño visual de la aplicación hemos decidido darle un enfoque oscuro, ya que nuestro estudio de usuario ha hecho que nos demos cuenta de que reduce la fatiga visual en las sesiones de sofá o de noche, y se alinea perfectamente con la estética de las plataformas de gaming (como Discord o Steam) que usa nuestro perfil principal 
+Para el diseño visual de la aplicación hemos optado por un enfoque oscuro. Nuestro estudio de usuario demuestra que reduce la fatiga visual en sesiones nocturnas y encaja con la estética de las plataformas gaming (Discord, Steam) que usa nuestro público.
 
-Para organizar la interfaz, aplicamos la regla de de color del 60-30-10[1]:
+## Paleta de Colores (Regla 60-30-10)[1]
+*   **Principal (60%) $\color{#0D0E12}{{●}}$ `#0D0E12`:** Negro profundo. Fondo general y detrás de las tarjetas.
+*   **Secundario (30%) $\color{#4a4a4a}{{●}}$ `#4a4a4a`:** Gris oscuro. Bordes de los paneles, barras de navegación y botones inactivos.
+*   **Acento (10%) $\color{#8F00FF}{{●}}$ `#8F00FF`:** Violeta neón. Destaca el logo, los botones principales, los estados activos (check) y la puntuación.
+*   **Legibilidad (WCAG AA)[2]:** Todo el texto sobre fondo oscuro es blanco (`#FFFFFF`) o gris claro para garantizar el contraste. El rojo se reserva exclusivamente para acciones de descarte/cancelación.
 
-*   **Color Principal (60%) $\color{#0D0E12}{{●}}$ — `#0D0E12`:** Es nuestro "lienzo". Un negro profundo que se utiliza en el fondo general de la aplicación y detrás de las tarjetas. Ya que es el color más utilizado en el mundo de los videojuegos.
-*   **Color Secundarios (30%) $\color{#4a4a4a}{{●}}$ — `#4a4a4a`:** Un gris oscuro empleado para crear jerarquía visual. Se usa en barras de navegación, menús secundarios y en el fondo de los botones que no están seleccionados, permitiendo separar elementos sin romper la estética oscura.
-*   **Color de Acento (10%) $\color{#8F00FF}{{●}}$ — `#8F00FF`:** Un tono violeta, porque es un color que se relaciona con el gaming.
+## Tipografía
+Uso de fuentes sans-serif geométricas (estilo Inter o Roboto):
+*   **Negrita:** Para títulos principales ("Stop scrolling", "Dune: Part Two") y botones principales
+*   **Semi-negrita:** Para Subtítulos y etiquetas de estado ("Room Code", "Live")
+*   **Regular:** Para texto de descripción, detalles de la película y textos secundarios en gris
 
-** Reglas de legibilidad y contraste:**
-Para garantizar que la interfaz sea usable y accesible (Norma WCAG AA)[2], establecemos que todo el texto sobre el fondo oscuro debe ser de color **blanco (`#FFFFFF`)** ya que no es ideal utilizar texto oscuro o rojo directamente sobre el fondo negro para evitar problemas de lectura
+## Iconografía
+Iconos lineales, sencillos y de trazo fino.
+*   **Acciones:** Cruz (✗) para indicar que no le gusta,corazón para indicar que te gusta "Like", iconos de QR y enlaces para compartir.
+*   **Navegación:** El logo de la app y la X roja situada en la esquina derecha actuan como botón de "Inicio" (Home) para volver a la primera pantalla
+*   **Estado:** Puntos verdes para indicar que la sala está abierta y que los usuarios están conectados
+
+## Distribución (Layout)
+Diseño basado en una tarjeta para mantener la atención del usuario
+*   **Pantalla 1 (Acceso):** Centrada verticalmente. Título principal, subtítulo y una tarjeta (Card) central que agrupa el campo de código PIN, el botón de escanear QR y el botón de crear sala
+*   **Pantalla 2 (Configuración):** Columna izquierda con el código de la sala y botones de compartir (enlace, WhatsApp, Discord), panel principal dividido en pasos numerados para filtrar (1. Categoría, 2. Plataformas), en la esquina superior derecha hay una **X roja** que cancela la sala y devuelve al usuario a la pantalla de inicio
+*   **Pantalla 3 (Swipe):** Enfocada en la tarjeta de contenido, arriba se muestra el estado de los usuarios en la sala y abajo hayamos dos botones flotantes (X y Corazón) y el texto de ayuda que indican que el corazon es para indicar que le gusta y la X para decir que no le gusta
+
+## Diseño de componentes
+*   **Paneles/Tarjetas:** Fondos oscuros con un borde sutil gris para delimitar las zonas y esquinas redondeadas (radio de 12 a 16 px).
+*   **Botones:** Bordes redondeados (8 px) con el botón principal que tiene fondo violeta, los secundarios son transparentes con borde gris y los de acción (X, Corazón) son circulares
+*   **Selecciones (Check):** Al elegir una categoría o plataforma, el borde del panel se vuelve violeta y aparece un círculo con un check en la esquina 
+*   **Interacción Swipe:** La tarjeta de contenido muestra la plataforma en la esquina superiore y al deslizar, se intuye el cambio a la siguiente tarjeta con un efecto de desvanecimiento
 
 # 2.6 Pautas de componentes visuales
 
