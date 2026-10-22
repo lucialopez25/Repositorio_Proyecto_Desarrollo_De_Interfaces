@@ -35,12 +35,12 @@ Diseño basado en una tarjeta para mantener la atención del usuario
 # 2.6 Pautas de componentes visuales
 
 **Propiedades y Métodos:**[3]
-*   **Botones:** Métodos para cambiar el texto y bloquearse después devotar
+*   **Botones:** Métodos para cambiar el texto y bloquearse después de votar
 *   **Listas:** Método para leer el filtro seleccionado
 *   **Tarjetas:** Métodos para moverse en pantalla (Swipe) y ocultarse
 
 **Eventos y Acciones:**[4]
-*   **Swipe:** Eventos de ratón al pulsar, arrastrar y soltar, Al soltar, se calcula la dirección para decidir Like (Derecha) o Dislike (Izquierda)
+*   **Swipe:** Eventos de ratón al pulsar, arrastrar y soltar, al soltar, se calcula la dirección para decidir Like (Derecha, corazón) o Dislike (Izquierda, X)
 *   **Clics:** Eventos en botones para leer datos (como el PIN) y actualizar la app
 
 **Persistencia:**[5]
