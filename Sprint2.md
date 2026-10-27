@@ -22,9 +22,11 @@ Iconos lineales, sencillos y de trazo fino.
 
 ## Distribución (Layout)
 Diseño basado en una tarjeta para mantener la atención del usuario
-*   **Pantalla 1 (Acceso):** Centrada verticalmente. Título principal, subtítulo y una tarjeta (Card) central que agrupa el campo de código PIN, el botón de escanear QR y el botón de crear sala
-*   **Pantalla 2 (Configuración):** Columna izquierda con el código de la sala y botones de compartir (enlace, WhatsApp, Discord), panel principal dividido en pasos numerados para filtrar (1. Categoría, 2. Plataformas), en la esquina superior derecha hay una **X roja** que cancela la sala y devuelve al usuario a la pantalla de inicio
-*   **Pantalla 3 (Swipe):** Enfocada en la tarjeta de contenido, arriba se muestra el estado de los usuarios en la sala y abajo hayamos dos botones flotantes (X y Corazón) y el texto de ayuda que indican que el corazon es para indicar que le gusta y la X para decir que no le gusta
+* Pantalla 1 (Acceso): Centrada verticalmente con el título principal, subtítulo y una tarjeta (Card) central que agrupa el campo de código PIN, el botón de escanear QR y el botón de crear sala
+* Pantalla 2 (Configuración): Columna izquierda con el código de la sala y botones de compartir (enlace, WhatsApp, Discord, panel principal dividido en pasos numerados para filtrar (1. Categoría, 2. Plataformas). En la esquina superior derecha hay una X roja que cancela la sala y devuelve al usuario a la pantalla de inicio
+*  Pantalla 3 (Carga): Pantalla de transición centrada, que muestra el logo de la app con un efecto de brillo y un indicador circular de carga y el texto Sincronizando la sala
+* Pantalla 4 (Swipe): Enfocada en la tarjeta de contenido, arriba se muestra el estado de los usuarios en la sala y abajo hay dos botones flotantes (X y Corazón) y el texto de ayuda que indica que el corazón es para decir que te gusta y la X para decir que no te gusta
+* Pantalla 5 (Match): Aparece al coincidir todos los votos que centra una tarjeta con el texto ¡Hay match!, el póster del título elegido, su información y la plataforma donde está disponible. El fondo incluye un efecto de confeti sutil, arriba a la derecha hay una X para cerrar esta pantalla
 
 ## Diseño de componentes
 *   **Paneles/Tarjetas:** Fondos oscuros con un borde sutil gris para delimitar las zonas y esquinas redondeadas (radio de 12 a 16 px).
