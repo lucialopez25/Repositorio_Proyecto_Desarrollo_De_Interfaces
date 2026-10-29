@@ -422,35 +422,35 @@ Esta pantalla mostrará el resultado de la votación cuando se encuentre una coi
 
 ---
 
-# Pautas de la secuencia de control de la aplicación
+# 2.7.Pautas de la secuencia de control de la aplicación
 
 La secuencia de control de CoSwipe define el orden de las acciones y cómo responde la aplicación a las decisiones de los usuarios, desde que se abre hasta que se obtiene un resultado o se cierra la sesión.
 
 El objetivo es ofrecer un funcionamiento sencillo, rápido e intuitivo que facilite la elección grupal de películas, series o videojuegos. Para ello, la aplicación debe guiar a los participantes durante cada fase y gestionar correctamente las acciones y posibles errores.
 
-## 1. Inicio de la aplicación
+## 2.7.1. Inicio de la aplicación
 Al abrir CoSwipe, el usuario accede a una pantalla principal desde la que puede crear una sala o unirse a una existente.  
 No es necesario registrarse ni iniciar sesión, lo que simplifica el acceso y evita solicitar datos personales. Las dos opciones deben mostrarse claramente para facilitar la navegación sin pasar por menús adicionales.
 
-## 2. Creación o acceso a una sala
+## 2.7.2. Creación o acceso a una sala
 El usuario puede iniciar una sesión o incorporarse a otra para participar en una votación conjunta.  
 * **Crear sala:** el anfitrión selecciona el tipo de contenido (películas, series o videojuegos) y las plataformas disponibles. Después, la aplicación genera un código de acceso, un código QR y un enlace para compartir.  
 * **Unirse a una sala:** los participantes acceden mediante el código, escaneando el QR o utilizando el enlace compartido.  
 Antes de permitir la entrada, la aplicación comprueba que la sala sea válida. Todos los participantes deben estar en la misma sesión para que sus votos se registren correctamente.
 
-## 3. Preparación de la votación
+## 2.7.3. Preparación de la votación
 Una vez preparada la sala, la aplicación carga las tarjetas según los filtros establecidos por el anfitrión, como el tipo de contenido y las plataformas seleccionadas.  
 Todos los participantes deben recibir las mismas opciones para poder comparar sus preferencias correctamente. Cada tarjeta representa una película, serie o videojuego y muestra la información necesaria para valorarlo sin consultar otros catálogos manualmente.  
 Si ocurre un problema de conexión o no se pueden cargar los contenidos, la aplicación muestra un mensaje explicativo que permita al usuario identificar el problema e intentarlo de nuevo.
 
-## 4. Votación mediante tarjetas
+## 2.7.4. Votación mediante tarjetas
 Cuando las tarjetas están cargadas, comienza la votación. Cada participante utiliza su dispositivo para valorar las opciones mediante gestos táctiles:  
 * **Deslizar a la derecha:** indica que le gusta el contenido y estaría dispuesto a elegirlo.  
 * **Deslizar a la izquierda:** descarta el contenido porque no le interesa.  
 Cada voto se envía al sistema para compararlo con las decisiones del resto de participantes. Los votos permanecen privados durante la votación para evitar influencias o presiones del grupo.  
 Todos los usuarios deben valorar el mismo conjunto de tarjetas, garantizando una comparación coherente de sus preferencias. Este sistema busca reducir el tiempo dedicado a decidir qué hacer y aprovecharlo mejor en la actividad de ocio.
 
-## 5. Comprobación de coincidencias
+## 2.7.5. Comprobación de coincidencias
 El sistema analiza los votos recibidos para comprobar si existe una coincidencia entre todos los participantes. Según los resultados, pueden darse tres situaciones:  
 * **Coincidencia unánime:** si todos aceptan el mismo contenido, la votación se detiene y aparece la pantalla de Match, que destaca la opción elegida y la información disponible sobre la plataforma donde verla o jugar.  
 * **Sin coincidencia:** la votación continúa con las tarjetas restantes hasta encontrar una opción aceptada por todos o agotar el catálogo.  
@@ -458,12 +458,12 @@ El sistema analiza los votos recibidos para comprobar si existe una coincidencia
 La comprobación debe coordinarse entre todos los participantes. Cuando se detecta una coincidencia, la votación se detiene y se muestra el resultado para evitar que se sigan procesando nuevos votos.  
 Este mecanismo permite tomar decisiones grupales de forma más rápida e imparcial, reduciendo la necesidad de debatir cada opción.
 
-## 6. Visualización del resultado
+## 2.7.6. Visualización del resultado
 Al terminar la votación, todos los participantes ven el resultado de la sesión. La pantalla muestra el título seleccionado y la información disponible sobre las plataformas donde se puede ver la película o serie o jugar al videojuego.  
 El contenido ganador debe destacarse sin añadir información innecesaria, para que todos identifiquen rápidamente la decisión final.  
 Si existe unanimidad, se muestra un Match. Si se agotan las tarjetas sin conseguirla, aparece la opción con mayor puntuación. Así, el grupo puede pasar directamente a la actividad elegida sin seguir buscando en diferentes catálogos.
 
-## 7. Finalización de la sesión
+## 2.7.7. Finalización de la sesión
 La sesión termina cuando se obtiene un resultado o cuando el anfitrión decide cerrar la sala.  
 Si se obtiene un resultado, la aplicación deja de comprobar nuevos votos y muestra el contenido seleccionado. Si el anfitrión cierra la sala antes, la votación se interrumpe y se dejan de aceptar nuevas decisiones.  
 Al finalizar, se cierra la interacción compartida y se impide enviar votos a una sala inactiva.  
@@ -482,4 +482,4 @@ Esta última fase completa la secuencia de control de CoSwipe, desde el acceso i
 * **Ajustes y documentación:** en la última fase se corregirán los problemas detectados durante las pruebas y se incorporarán las mejoras necesarias en las interfaces. Se comprobará que las modificaciones mantengan la coherencia visual y funcional de CoSwipe y que respeten los criterios de usabilidad y accesibilidad definidos al comienzo del sprint. Además, se recopilarán las evidencias del trabajo realizado y se preparará la documentación necesaria para la entrega y presentación del Sprint 2. En ella se recogerán las decisiones adoptadas, los cambios realizados y los resultados obtenidos, facilitando la explicación del trabajo desarrollado por el equipo.
 
 ## 2.8.2 Diagrama de Gantt
-* Image
+<img width="501" height="242" alt="image" src="https://github.com/user-attachments/assets/fbb6ff65-3ce4-4136-9da3-34373d27b176" />
