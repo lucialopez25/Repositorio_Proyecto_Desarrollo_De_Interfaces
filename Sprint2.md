@@ -129,8 +129,8 @@ La interfaz de CoSwipe se estructura en torno a una disposición fija y persiste
 * **Pantalla 2: Room Creation & Filter Setup**
   * **Controles:** Selector de categoría (Películas, Series, Videojuegos), rejilla de chips para plataformas (Netflix, Steam, etc.), desplegable de géneros, botón de copiado de enlace con accesos directos a WhatsApp/Discord.
   * **Objetivo:** Acotar el catálogo de forma visual y rápida.
-* **Pantalla 3: Active Lobby Screen**
-  * **Controles:** Código PIN de 4 dígitos en formato destacado, código QR visible para escaneo presencial, lista dinámica de avatares conectados y botón "Start Swiping Now".
+* **Pantalla 3: Pantalla de carga**
+  * **Controles:** Visibilidad del estado del sistema para el usuario
 * **Pantalla 4: Interactive Swipe Deck Screen**
   * **Controles:** Encabezado con tipografía adaptada, tarjeta central con carátula e información relevante (sin indicador de cartas restantes), botones inferiores circulares de "PASS" (Rojo) y "LIKE" (Verde) con etiquetas aumentadas, y botón global de salida (❌) en la esquina superior derecha.
 * **Pantalla 5: Unanimous Match Screen**
