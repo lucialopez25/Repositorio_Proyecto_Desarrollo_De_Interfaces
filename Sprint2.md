@@ -13,7 +13,7 @@ El diseño de las diferentes pantallas se alinea con las 10 heurísticas de usab
 *   **Control y libertad del usuario:** Inclusión de un botón de cierre explícito (❌) en la esquina superior derecha para cancelar salas o regresar a la pantalla de inicio en cualquier momento previo a la confirmación final.
 *   **Consistencia y estándares:** Curva de aprendizaje reducida mediante patrones de diseño ampliamente adoptados:
     *   *Benchmarking* de interacción tipo *Swipe* (deslizar a la derecha para "Me gusta" / izquierda para "No me gusta").
-    *   Simbología coherente (❌, 📽️, 🎮) basada en las guías de estilo *Material Design* de Google[2] y *Human Interface Guidelines* de Apple[3].
+    *   Simbología coherente (❌, 📽️, 🎮) basada en las guías de estilo *Material Design* de Google y *Human Interface Guidelines* de Apple.
 *   **Reconocer antes que recordar:** Minimización de la carga cognitiva haciendo visibles los objetos y acciones principales. En las salas privadas se muestran los avatares de los usuarios conectados en tiempo real para mantener la visibilidad del grupo.
 *   **Prevenir los errores:** 
     *   Restricción del campo de entrada del PIN exclusivamente a caracteres numéricos, manteniendo desactivado el botón "Entrar" hasta completar los dígitos requeridos.
