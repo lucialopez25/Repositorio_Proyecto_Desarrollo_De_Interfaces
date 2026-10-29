@@ -1,3 +1,57 @@
+# 2.1 Usabilidad y Accesibilidad
+
+Para garantizar una experiencia intuitiva, fluida y universal dentro de la aplicación, el diseño de la interfaz se ha estructurado siguiendo principios consolidados de interacción persona-ordenador (IPO) y normativas internacionales.
+
+## 2.1.1 Usabilidad (Decálogo de Jakob Nielsen)[1]
+El diseño de las diferentes pantallas se alinea con las 10 heurísticas de usabilidad para reducir la fricción durante la toma de decisiones en grupo:
+
+*   **Visibilidad del estado del sistema:**
+    *   Uso de una animación de carga (*spinner*) en la Pantalla 3 con el texto "Sincronizando la sala".
+    *   Indicación visual del progreso mediante un contador de tarjetas restantes en la sesión de votación.
+    *   Retroalimentación (*feedback*) inmediata al votar: el borde del panel cambia de color y la tarjeta se desplaza según la acción realizada.
+*   **Relación entre el sistema y el mundo real:** Empleo de vocabulario familiar para el público objetivo y la industria del entretenimiento, tales como "Match", "Lista de seguimiento", "Salas de votación" o "Tráiler". Los mensajes de error evitan códigos técnicos e indican el problema de forma explícita.
+*   **Control y libertad del usuario:** Inclusión de un botón de cierre explícito (❌) en la esquina superior derecha para cancelar salas o regresar a la pantalla de inicio en cualquier momento previo a la confirmación final.
+*   **Consistencia y estándares:** Curva de aprendizaje reducida mediante patrones de diseño ampliamente adoptados:
+    *   *Benchmarking* de interacción tipo *Swipe* (deslizar a la derecha para "Me gusta" / izquierda para "No me gusta").
+    *   Simbología coherente (❌, 📽️, 🎮) basada en las guías de estilo *Material Design* de Google[2] y *Human Interface Guidelines* de Apple[3].
+*   **Reconocer antes que recordar:** Minimización de la carga cognitiva haciendo visibles los objetos y acciones principales. En las salas privadas se muestran los avatares de los usuarios conectados en tiempo real para mantener la visibilidad del grupo.
+*   **Prevenir los errores:** 
+    *   Restricción del campo de entrada del PIN exclusivamente a caracteres numéricos, manteniendo desactivado el botón "Entrar" hasta completar los dígitos requeridos.
+    *   Diálogos de confirmación antes de eliminar o abandonar una sala activa.
+*   **Flexibilidad y eficiencia de uso:** Inclusión de atajos de teclado (flecha derecha para *Like*, flecha izquierda para *Dislike*, tecla *Esc* para salir) para acelerar la navegación de usuarios experimentados.
+*   **Estética y diseño minimalista:** Interfaz limpia sin elementos distractores. La paleta cromática se limita estrictamente a tres tonos (Negro profundo $\color{#0D0E12}{{●}}$, Gris oscuro $\color{#4A4A4A}{{●}}$ y Violeta neón $\color{#8F00FF}{{●}}$) para centrar la atención en la tarjeta de contenido.
+*   **Ayudar en el diagnóstico de errores:** Mensajes claros y descriptivos. Por ejemplo, en lugar de un código de red indeterminado, se muestra: *"PIN incorrecto o la sala ha caducado"*.
+*   **Ayuda y documentación:** Presencia de una sección de Preguntas Frecuentes (FAQs) y accesos directos de ayuda (❓) junto a opciones complejas como el filtrado de plataformas.
+
+## 2.1.2 Accesibilidad (Java Accessibility API y WCAG)
+La aplicación traslada las interacciones gestuales a mecanismos alternativos accesibles para garantizar su uso mediante tecnologías de asistencia:
+
+*   **Navegación por teclado completa:** La interacción por *Swipe* se mapea mediante las clases `InputMap` y `ActionMap` de Java Swing, permitiendo alternar opciones y votar mediante tabulación y cursores sin necesidad de ratón.
+*   **Etiquetado accesible:** Los campos de entrada (como el código PIN) y los botones iconográficos (Corazón, X) cuentan con etiquetas descriptivas accesibles vinculadas mediante la Java Accessibility API (JAAPI)[4].
+*   **Cumplimiento WCAG 2.1 (Nivel AA) / UNE-EN 301549[5]:**
+    *   Garantía de alto contraste entre texto e interfaz (relación mínima 4.5:1).
+    *   Alternativas textuales para todos los elementos visuales y pósters de películas.
+    *   Sin dependencia exclusiva del color para comunicar estado o errores (uso combinado de iconos y texto).
+
+# 2.2 Medidas de usabilidad y accesibilidad
+
+Para validar la calidad del software se han fijado estándares normativos, métricas cuantitativas y herramientas especializadas de auditoría.
+
+## Marco Normativo y Estándares
+*   **UNE-EN 301549 / Ley 11/2023[5]:** Requisitos de accesibilidad para productos y servicios TIC en la Unión Europea. Obliga a presentar contenidos perceptibles y comprensibles, evitando interacciones accidentales (ej. la aplicación ignora el *doble clic* rápido para evitar votos dobles involuntarios).
+*   **UNE-EN ISO 9241-11[6]:** Marco de referencia para evaluar la usabilidad en términos de eficacia, eficiencia y satisfacción del usuario.
+
+## Métricas e Indicadores de Rendimiento (KPIs)
+*   **Tiempo de acceso a sala privada:** Objetivo $\le 5$ segundos desde la introducción del PIN o escaneo de QR.
+*   **Tiempo de decisión por tarjeta:** Objetivo $\le 3$ segundos por elemento mediante interacción fluida.
+*   **Tasa de error de entrada:** Reducción a $0\%$ en la inserción del PIN mediante el bloqueo por máscara de entrada.
+
+## Herramientas de Auditoría y Pruebas
+*   **Java Accessibility Utilities / Accessibility Inspector[4]:** Utilidad para verificar la jerarquía de componentes y comprobar que los lectores de pantalla leen correctamente los paneles de Java Swing.
+*   **NVDA (NonVisual Desktop Access)[7]:** Lector de pantalla en entorno Windows utilizado para validar la simulación de navegación por voz e invidentes.
+*   **FlatLafInspector:** Herramienta de inspección en tiempo real para verificar márgenes, contrastes cromáticos y escalado de fuentes en la interfaz gráfica.
+
+
 # 2.5 Pautas de aspecto
 
 Para el diseño visual de la aplicación hemos optado por un enfoque oscuro. Nuestro estudio de usuario demuestra que reduce la fatiga visual en sesiones nocturnas y encaja con la estética de las plataformas gaming (Discord, Steam) que usa nuestro público.
@@ -60,3 +114,6 @@ Diseño basado en una tarjeta para mantener la atención del usuario
 
 [5]“Reading, Writing, and Creating Files (The Java™ Tutorials > Essential Java Classes > Basic I/O)”. Moved. Accedido el 21 de octubre de 2026. [En línea]. Disponible: https://docs.oracle.com/javase/tutorial/essential/io/file.html
 
+[6]“UNE-EN 301549:2022 Requisitos de accesibilidad para productos y servicios TIC,” *Asociación Española de Normalización (UNE)*. Accedido el 20 de octubre de 2026. [En línea]. Disponible: https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0068037
+
+[7]“UNE-EN ISO 9241-11:2018 Ergonomía de la interacción persona-sistema. Parte 11: Usabilidad,” *Asociación Española de Normalización (UNE)*. Accedido el 20 de octubre de 2026. [En línea]. Disponible: https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0060329
