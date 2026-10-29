@@ -28,7 +28,7 @@ La aplicación traslada las interacciones gestuales a mecanismos alternativos ac
 
 *   **Navegación por teclado completa:** La interacción por *Swipe* se mapea mediante las clases `InputMap` y `ActionMap` de Java Swing, permitiendo alternar opciones y votar mediante tabulación y cursores sin necesidad de ratón.
 *   **Etiquetado accesible:** Los campos de entrada (como el código PIN) y los botones iconográficos (Corazón, X) cuentan con etiquetas descriptivas accesibles vinculadas mediante la Java Accessibility API (JAAPI)[4].
-*   **Cumplimiento WCAG 2.1 (Nivel AA) / UNE-EN 301549[5]:**
+*   **Cumplimiento WCAG 2.1 (Nivel AA) / UNE-EN 301549[6]:**
     *   Garantía de alto contraste entre texto e interfaz (relación mínima 4.5:1).
     *   Alternativas textuales para todos los elementos visuales y pósters de películas.
     *   Sin dependencia exclusiva del color para comunicar estado o errores (uso combinado de iconos y texto).
@@ -38,8 +38,8 @@ La aplicación traslada las interacciones gestuales a mecanismos alternativos ac
 Para validar la calidad del software se han fijado estándares normativos, métricas cuantitativas y herramientas especializadas de auditoría.
 
 ## Marco Normativo y Estándares
-*   **UNE-EN 301549 / Ley 11/2023[5]:** Requisitos de accesibilidad para productos y servicios TIC en la Unión Europea. Obliga a presentar contenidos perceptibles y comprensibles, evitando interacciones accidentales (ej. la aplicación ignora el *doble clic* rápido para evitar votos dobles involuntarios).
-*   **UNE-EN ISO 9241-11[6]:** Marco de referencia para evaluar la usabilidad en términos de eficacia, eficiencia y satisfacción del usuario.
+*   **UNE-EN 301549 / Ley 11/2023[6]:** Requisitos de accesibilidad para productos y servicios TIC en la Unión Europea. Obliga a presentar contenidos perceptibles y comprensibles, evitando interacciones accidentales (ej. la aplicación ignora el *doble clic* rápido para evitar votos dobles involuntarios).
+*   **UNE-EN ISO 9241-11[7]:** Marco de referencia para evaluar la usabilidad en términos de eficacia, eficiencia y satisfacción del usuario.
 
 ## Métricas e Indicadores de Rendimiento (KPIs)
 *   **Tiempo de acceso a sala privada:** Objetivo $\le 5$ segundos desde la introducción del PIN o escaneo de QR.
