@@ -2,7 +2,7 @@
 
 Para garantizar una experiencia intuitiva, fluida y universal dentro de la aplicación, el diseño de la interfaz se ha estructurado siguiendo principios consolidados de interacción persona-ordenador (IPO) y normativas internacionales.
 
-## 2.1.1 Usabilidad (Decálogo de Jakob Nielsen)[1]
+## 2.1.1 Usabilidad (Decálogo de Jakob Nielsen)
 El diseño de las diferentes pantallas se alinea con las 10 heurísticas de usabilidad para reducir la fricción durante la toma de decisiones en grupo:
 
 *   **Visibilidad del estado del sistema:**
