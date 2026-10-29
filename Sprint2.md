@@ -188,6 +188,8 @@ Todas las ventanas implementan una maquetación jerárquica estandarizada median
 ## 2.4.2. Documentación Detallada de las 5 Pantallas de CoSwipe
 
 ### 1. Pantalla de Inicio / Bienvenida (JFrame Form)
+<img width="1100" height="829" alt="image" src="https://github.com/user-attachments/assets/a401690a-4704-4f09-b5f3-56e0f45b5f70" />
+
 * **Objetivo:** Permitir el acceso inmediato introduciendo un PIN de sala de 6 dígitos o iniciando la creación de una sala instantánea.
 * **Estructura de Layouts:**
   * **Panel Superior (BorderLayout):** Muestra la etiqueta del logotipo (JLabel) y el selector desplegable de idioma (JComboBox). Se excluye deliberadamente el botón de salida, ya que en esta etapa inicial no existe una sesión activa que abandonar.
@@ -200,6 +202,9 @@ Todas las ventanas implementan una maquetación jerárquica estandarizada median
   * **Botón Crear Sala Instantánea (JButton):** Botón con borde resaltado para iniciar una nueva sesión directa.
 
 ### 2. Pantalla de Creación de Sala (JFrame Form)
+<img width="1910" height="993" alt="image" src="https://github.com/user-attachments/assets/fe4f4c97-6b68-43dc-832d-67b255c9c6fa" />
+<img width="1897" height="995" alt="image" src="https://github.com/user-attachments/assets/6d02a81d-e2e1-4db6-bd5c-c88006489611" />
+
 * **Objetivo:** Configurar los parámetros de la sesión mediante la selección de tipo de contenido, catálogo de plataformas y filtros de género.
 * **Estructura de Layouts:**
   * **Panel Superior (BorderLayout):** Incluye un botón de retorno al inicio (JButton), la etiqueta del logotipo (JLabel) y el botón rojo de salida (JButton).
@@ -211,6 +216,8 @@ Todas las ventanas implementan una maquetación jerárquica estandarizada median
   * **Botón Iniciar Sesión (JButton):** Comando primario de gran tamaño para generar la sala y avanzar al Lobby.
 
 ### 3. Pantalla de Carga / Lobby de Espera (JFrame Form)
+<img width="1075" height="710" alt="image" src="https://github.com/user-attachments/assets/1b85d9cb-068d-4d09-83f3-1e064c8b847c" />
+
 * **Objetivo:** Mostrar el punto de encuentro previo a la votación, proporcionando el código PIN de acceso y el código QR visual de la sesión.
 * **Estructura de Layouts:**
   * **Panel Superior (BorderLayout):** Muestra la cabecera activa con el identificador de la sala creada.
@@ -222,6 +229,8 @@ Todas las ventanas implementan una maquetación jerárquica estandarizada median
   * **Botón Iniciar Votación (JButton):** Botón habilitado para el anfitrión (Host) que desencadena el inicio sincronizado de la selección.
 
 ### 4. Pantalla de Elección / Mesa de Votación (JFrame Form)
+<img width="1045" height="838" alt="image" src="https://github.com/user-attachments/assets/243ed579-594e-46bf-802c-09685f283a57" />
+
 * **Objetivo:** Presentar las fichas individuales de contenido e integrar los controles informativos y de interacción gestual (Swipe).
 * **Estructura de Layouts:**
   * **Panel Superior (BorderLayout):** Cabecera enriquecida que incluye el logotipo (JLabel), la etiqueta del contador de participantes en vivo (JLabel) y el botón de salida (JButton).
@@ -232,6 +241,8 @@ Todas las ventanas implementan una maquetación jerárquica estandarizada median
   * **Botón Aceptar / LIKE (JButton):** Botón circular de gran formato ubicado a la derecha, estilizado en color Verde Éxito (#22C55E).
 
 ### 5. Pantalla de Resultado Unánime / Match (JFrame Form)
+<img width="1126" height="852" alt="image" src="https://github.com/user-attachments/assets/8652b0b6-d5c5-4c57-8314-9b51d07016dd" />
+
 * **Objetivo:** Celebrar la coincidencia del grupo al alcanzar el 100% de votos positivos sobre una misma opción.
 * **Estructura de Layouts:**
   * **Panel Superior (BorderLayout):** Cabecera estándar de sesión activa.
